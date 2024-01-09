@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Horma Studio</title>
+  </head>
+  <body>
+    <header>
+      <div class="top_bar">
+        <img
+          class="logo"
+          src="./Files/cropped-cropped-Recurso-3@4x-1-1536x153.png"
+          alt="Logo"
+        />
+        <div class="menu">
+          <a href="#">INICIO</a>
+          <a href="#">MI NEGOCIO</a>
+          <a href="#">PRENSA</a>
+          <a href="#">CONTACTO</a>
+        </div>
+      </div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="filters_size">
+        <form>
+          <div class="campaign_filter">
+            <h3>Filtrar por Campaña:</h3>
+            <div class="eachcampaign">
+              <label>
+                <input type="checkbox" class="typeofcampaign" value="People" /> PEOPLE
+              </label>
+              <label>
+                <input type="checkbox" class="typeofcampaign" value="Fashion"/> FASHION
+              </label>
+              <label>
+                <input type="checkbox" class="typeofcampaign" value="Gastro"/> GASTRO
+              </label>
+              <label>
+                <input type="checkbox" class="typeofcampaign" value="Artistic" /> ARTISTIC
+              </label>
+            </div>
+          </div>
+          <div class="price_filter">
+            <h3>Filtrar por precio:</h3>
+            <div >
+              <label>
+              <input type="number" placeholder="Precio" class="price_input">
+              </label>
+              <label>
+                <button type="button" class="filter" id="filter_button">FILTRAR</button>
+              </label>
+            </div>
+            <div class="remove_all">
+              <button type="button" id="remove_filter_button" class="filter">ELIMINAR FILTROS</button>
+            </div>
+            
+          </div>
+        </form>
+      </div>
+      <div>
+      <div class="title_content">
+      <h1>NUESTROS PRODUCTOS</h1>
+      </div>
+      <div class="products_div" id="product_list">
+      <!--Aqui va la lista de productos-->
+      </div>
+      <div class="product_info_container" id="product_info_container"></div>
+    </div>
+    </div>
+
+    <script src="./main.js" type="module" defer></script>
+  </body>
+</html>
