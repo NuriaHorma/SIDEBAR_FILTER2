@@ -1,0 +1,234 @@
+
+
+:root {
+  --color: black;
+  --background-color: white;
+  --font-family: 
+  --button-background-color: black;
+
+  /*Buttons*/
+  --border-radius: 5px;
+  --background: #000;
+  --mix-blend-mode: luminosity;
+  --box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  --font-family: Arial, Helvetica, sans-serif ;
+  --font-size: 12px;
+  --font-style: normal;
+  --font-weight: 400;
+  --line-height: normal;
+  --button-font-color: white 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif ;
+}
+
+html{
+  cursor: url(./Files/img/circulo-relleno.png), auto;
+}
+
+
+.top_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.logo {
+  width: 20%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 10px;
+  margin-right: 30px;
+  color: var(--color);
+  font-size: 12px;
+}
+
+
+.content {
+ display: flex;
+  height: auto;
+  margin-left: 15px;
+  font-size: 12px;
+  
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+h3 {
+font-size: 16px;
+}
+.filters_size{
+  width: 30%;
+  margin-top: 80px;
+}
+
+.campaign_filter {
+  margin-top: 30px;
+ 
+}
+.eachcampaign {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.price_filter{
+  margin-top: 50px;
+}
+
+
+.price_input{
+  margin-top: 20px;
+  width: 40%;
+}
+
+@media only screen and (max-width: 1062px) {
+  .price_input {
+    width: 100%;
+    margin-bottom: 10px; /* Agrega espacio entre el input y el botón */
+  }
+
+  #filter_button {
+    width: 100%;
+    margin-top: 10px; /* Agrega espacio entre el botón y el input */
+    text-align: center; /* Centra el botón */
+    margin-left: 0px;
+  }
+}
+
+.filter {
+  border-radius: var(--border-radius);
+  background-color:var(--background);
+  mix-blend-mode: var(--mix-blend-mode) ;
+  box-shadow: var(--box-shadow);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-style: var(--font-style);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  color: var(--button-font-color);
+  transition: background-color 0.3s;
+}
+#filter_button{
+  margin-left: 10px;
+}
+#remove_filter_button{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter:hover{
+ background-color: white;
+  color: #000;
+  cursor: pointer;
+
+}
+
+/*PRODUCTOS*/
+
+.title_content{
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  display: flex;
+  
+}
+
+.products {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 80px;
+  
+  }
+
+
+.campaign {
+  width: 200px;
+  height: 250px;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  border: 1px solid black;
+  border-radius: 5%;
+  margin-top: 40px;
+  margin: 10px;
+  transition: all 0.5s; 
+ 
+}
+
+.campaign:hover{
+  transform: scale(1.1);
+  cursor: url(./Files/img/circulo-relleno.png), auto;
+}
+
+  .products_div{
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  
+.campaign {
+  width: 200px;
+  height: 250px;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  border: 1px solid black;
+  margin-top: 40px;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.campaign img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+}
+
+.campaign-info {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.953);
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.campaign-name {
+  font-weight: bold;
+}
+
+.campaign-price {
+  margin-top: 5px; /* Ajusta el espaciado entre el nombre y el precio */
+}
